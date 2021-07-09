@@ -111,6 +111,10 @@ body{
     color: #fff;
 }
 
+.nav__unorder-list a:visited {
+    color: var(--linkColor);
+}
+
 .nav__item:hover {
     font-weight: bolder;
     background-color: rgba(155, 34, 38, 0.9);
