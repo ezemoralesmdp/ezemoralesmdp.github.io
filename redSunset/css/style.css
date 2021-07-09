@@ -103,15 +103,12 @@ body{
     border-radius: 40px;
     letter-spacing: 2px;
     box-shadow: 2px 2px 2px grey;
-}
-
-.nav__item a {
     text-decoration: none;
     color: var(--linkColor);
 }
 
-.nav__item a:hover {
-    color: white;
+.nav__unorder-list a:hover {
+    color: #fff;
 }
 
 .nav__item:hover {
