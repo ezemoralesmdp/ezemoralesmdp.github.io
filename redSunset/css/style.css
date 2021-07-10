@@ -251,7 +251,7 @@ body::-webkit-scrollbar-thumb {
     padding: 5px;
     height: 250px;
     border: 3px var(--stick);
-    background: rgba(250, 243, 221, 0.3);
+    background: rgba(250, 243, 221, 0.2);
     overflow: auto;
 }
 
