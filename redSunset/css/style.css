@@ -107,14 +107,15 @@ body{
     color: var(--linkColor);
 }
 
-.nav__menu a:hover {
-    color: #fff;
+.nav__item:visited {
+    color: var(--linkColor);
 }
 
 .nav__item:hover {
     font-weight: bolder;
     background-color: rgba(155, 34, 38, 0.9);
     transition: background-color .5s;
+    color: #fff;
 }
 
 /* section */
