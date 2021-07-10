@@ -243,7 +243,6 @@ body::-webkit-scrollbar-thumb {
 .container__tab {
     width: 100%;
     margin: 0 auto;
-    display: block;
 }
 
 .section__main-text {
@@ -311,10 +310,6 @@ body::-webkit-scrollbar-thumb {
     margin: 0 29px;
     font-size: 50px;
     color: var(--stick);
-}
-
-.footer__icon a {
-
 }
 
 .footer__text {
