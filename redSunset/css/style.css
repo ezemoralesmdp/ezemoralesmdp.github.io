@@ -107,7 +107,7 @@ body{
     color: var(--linkColor);
 }
 
-.nav__unorder-list a:hover {
+.nav__menu a:hover {
     color: #fff;
 }
 
