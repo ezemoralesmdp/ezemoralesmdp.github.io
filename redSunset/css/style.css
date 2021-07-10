@@ -102,17 +102,13 @@ body{
     font-size: 20px;
     border-radius: 40px;
     letter-spacing: 2px;
-    box-shadow: 2px 2px 2px grey;
+    box-shadow: 2px 2px  2px grey;
     text-decoration: none;
     color: var(--linkColor);
 }
 
 .nav__menu a:hover {
     color: #fff;
-}
-
-.nav__unorder-list a:visited {
-    color: var(--linkColor);
 }
 
 .nav__item:hover {
