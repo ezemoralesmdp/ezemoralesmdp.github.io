@@ -92,7 +92,7 @@ body{
     justify-content: space-around;
     border-top: 4px solid var(--stick);
     border-bottom: 4px solid var(--stick);;
-    padding: 20px 0;
+    padding: 25px 0;
 }
 
 .nav__item {
@@ -114,7 +114,15 @@ body{
 .nav__item:hover {
     font-weight: bolder;
     background-color: rgba(155, 34, 38, 0.9);
+    color: #fff;
     transition: background-color .5s;
+}
+
+/* active botton */
+
+.nav__item-here {
+    font-weight: bolder;
+    background-color: rgba(155, 34, 38, 0.9);
     color: #fff;
 }
 
