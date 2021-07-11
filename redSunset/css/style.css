@@ -234,7 +234,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
 }
 
-.section__main-post-img {
+#profileImage {
     border-radius: 50%;
     border: 5px solid ghostwhite;
     margin: 0px 30px 0 0;
