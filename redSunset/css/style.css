@@ -34,6 +34,7 @@ body::-webkit-scrollbar-thumb {
 
 .container {
     width: 85%;
+    max-width: 1200px;
     margin: 20px auto;
     background: rgba(226, 208, 197, 0.8);
     border-radius: 15px;
