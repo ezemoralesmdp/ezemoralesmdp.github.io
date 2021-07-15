@@ -299,6 +299,9 @@ body::-webkit-scrollbar-thumb {
 @media screen and (max-width: 1000px) {
     /* main container */
     .container {
+        margin: 0;
+        padding: 0;
+
         grid-template-areas: 
         "header header header"
         "nav nav nav"
