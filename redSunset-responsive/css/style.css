@@ -335,7 +335,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .header__container-img img {
-        min-width: 300px;
+        width: 300px;
     }
 
     /* nav */
