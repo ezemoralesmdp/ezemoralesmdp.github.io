@@ -239,8 +239,11 @@ body::-webkit-scrollbar-thumb {
     color: black;
 }
 
-.sidebar__video {
-    text-align: center;
+.sidebar__video iframe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
 }
 
 /* F O O T E R */
@@ -359,7 +362,11 @@ body::-webkit-scrollbar-thumb {
     
 
     /* sidebar */
-
+    .sidebar__post {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     /* footer */
 
