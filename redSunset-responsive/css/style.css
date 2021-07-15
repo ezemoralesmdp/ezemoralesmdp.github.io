@@ -94,6 +94,10 @@ body::-webkit-scrollbar-thumb {
 
 .header__container-img {
     margin: 10px 0;
+
+}
+.header__container-img img {
+    width: 400px;
 }
 
 .header__text {
@@ -335,7 +339,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .header__container-img img {
-        width: 300px;
+        width: 100%;
     }
 
     /* nav */
