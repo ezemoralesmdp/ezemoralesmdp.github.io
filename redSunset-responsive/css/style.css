@@ -334,6 +334,10 @@ body::-webkit-scrollbar-thumb {
         margin: 10px auto;
     }
 
+    .header__container-img img {
+        width: 300px;
+    }
+
     /* nav */
 
     .nav__options {
