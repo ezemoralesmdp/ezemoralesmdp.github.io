@@ -16,7 +16,7 @@ body {
     color: #000;
 }
 
-/* V A R I A B L E S */
+/* V A R */
 
 :root {
     --textColor: #000;
@@ -27,6 +27,7 @@ body {
     --border: rgba(49, 34, 68, 0.9);
     --primaryFontText: 'BioRhyme', serif;
     --secondaryFontText: 'Space Mono', monospace;
+    --titleFontSize: 17px;
 }
 
 /* S C R O L L */
@@ -62,6 +63,14 @@ body::-webkit-scrollbar-thumb {
     grid-template-areas: "header header header" "nav nav nav" "content content sidebar" "content content sidebar" "content content sidebar" "footer footer footer";
 }
 
+/* ----------------------------------------------------------- G R I D  L A R G E --------------------------------------------------- */
+
+.grid__large {
+    grid-template-areas: "header header header" "nav nav nav" "content content content" "content content content" "content content content" "footer footer footer";
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
 /* H E A D E R */
 
 .container .header {
@@ -79,17 +88,17 @@ body::-webkit-scrollbar-thumb {
     margin: 10px 80px;
 }
 
-.header__right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: end;
-    width: 100%;
-}
-
 .header__title {
     font-family: 'Space Mono', monospace;
     letter-spacing: 1px;
+}
+
+.header__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
 }
 
 .header__container-img {
@@ -118,6 +127,9 @@ body::-webkit-scrollbar-thumb {
     grid-area: nav;
     /* size */
     width: 100%;
+    /* display */
+    display: flex;
+    flex-direction: column;
 }
 
 .nav__options {
@@ -126,29 +138,34 @@ body::-webkit-scrollbar-thumb {
     /* display */
     border-top: 4px solid var(--stick);
     border-bottom: 4px solid var(--stick);;
-    
+    /* display */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-template-rows: repeat(1, 1fr);
 }
 
 .nav__item {
-    padding: 15px;
+    /* size */
+    min-width: 130px;
     margin: 0 15px;
     border: 1px solid #000;
+    padding: 15px;
     background: rgba(237, 246, 249, 0.9);
+    /* text */
     font-size: 20px;
+    text-align: center;
     border-radius: 40px;
     letter-spacing: 2px;
-    box-shadow: 2px 2px  2px grey;
+    /* display */
     display: flex;
-    text-align: center;
     align-items: center;
     justify-content: center;
+    /* shadow */
+    box-shadow: 2px 2px  2px grey;
 }
 
-.nav__item a {
-    text-decoration: none;
+.nav__options a {
+    text-decoration: none;  
     color: var(--linkColor);
 }
 
@@ -157,14 +174,27 @@ body::-webkit-scrollbar-thumb {
 }
 
 .nav__item:hover {
-    font-weight: bolder;
     background-color: rgba(155, 34, 38, 0.9);
     transition: background-color .5s;
-}
-
-.nav__item a:hover {
+    font-weight: bolder;
     color: #fff;
 }
+
+/* active botton here */
+
+.nav__item-here {
+    font-weight: bolder;
+    background-color: rgba(155, 34, 38, 0.9);
+    color: #fff;
+}
+
+/* --------------------------------------------------- C O N T E N T  L A R G E ----------------------------------------------------- */
+
+.content__large {
+    display: flex;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
 
 /* C O N T E N T */
 
@@ -178,13 +208,12 @@ body::-webkit-scrollbar-thumb {
 
 .content__title {
     /* size */
-    margin-top: 20px;
     border-radius: 12.5px 12.5px 0 0;
     background: var(--titleColor);
-    padding: 10px 30px;
+    padding: 8px 8px 8px 15px;
     /* text */
     font-family: var(--secondaryFontText);
-    font-size: 20px;
+    font-size: var(--titleFontSize);
     font-weight: 100;
     color: ghostwhite;
 }
@@ -194,6 +223,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 0 0 12.5px 12.5px;
     padding: 10px 30px;
     background: rgba(255, 241, 230, 0.6);
+    margin-bottom: 20px;
     /* text */
     font-family: var(--primaryFontText);
     font-size: 15px;
@@ -215,13 +245,12 @@ body::-webkit-scrollbar-thumb {
 
 .sidebar__title {
     /* size */
-    margin-top: 20px;
     border-radius: 12.5px 12.5px 0 0;
     background: var(--titleColor);
-    padding: 10px 30px;
+    padding: 8px 8px 8px 15px;
     /* text */
     font-family: var(--secondaryFontText);
-    font-size: 20px;        
+    font-size: var(--titleFontSize);        
     font-weight: 100;
     color: ghostwhite;
 }
@@ -231,6 +260,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 0 0 12.5px 12.5px;
     padding: 10px 30px;
     background: rgba(255, 241, 230, 0.6);
+    margin-bottom: 20px;
     /* text */
     font-family: var(--primaryFontText);
     font-size: 15px;
@@ -268,24 +298,27 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
 }
 
+/* first */
 .footer__section-first-child {
-    grid-area: footer__section-first-child;
     width: 33%;
+    grid-area: footer__section-first-child;
     padding: 10px;
 }
 
+/* second */
 .footer__section-second-child {
+    width: 33%;
     grid-area: footer__section-second-child;
     text-align: justify;
     text-indent: 20px;
-    width: 33%;
     padding: 30px;
 }
 
+/* third */
 .footer__section-third-child {
+    width: 33%;
     grid-area: footer__section-third-child;
     font-size: 50px;
-    width: 33%;
     padding: 10px;
 }
 
@@ -298,6 +331,175 @@ body::-webkit-scrollbar-thumb {
 .footer__section-third-child a:hover {
     font-size: 60px;
 }
+
+/* ------------------------------------------------------------ A B O U T  M E ------------------------------------------------------ */
+
+/* T A B */
+
+/* I M A G E  -  P R O F I L E */
+
+.section__main-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* ID - I M A G E S */
+
+#profileImage {
+    border-radius: 50%;
+    border: 5px solid ghostwhite;
+}
+
+/* C O N T A I N E R  T A B */
+
+.container__tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* M A I N  T E X T */
+
+.section__main-text h3 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.section__main-text {
+    width: 100%;
+    height: 250px;
+    border: 3px var(--stick);
+    background: rgba(250, 243, 221, 0.2);
+    overflow: auto;
+}
+
+.section__main-text::-webkit-scrollbar {
+    width: 7px;
+}
+
+.section__main-text::-webkit-scrollbar-thumb {
+    background: var(--stick);
+    border-radius: 5px;
+}
+
+/* Style the tab */
+.section__tab {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: var(--titleColor);
+}
+
+/* Style the buttons inside the tab */
+.section__tab button {
+    background-color: var(--titleColor);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: ghostwhite;
+}
+
+/* Change background color of buttons on hover */
+.section__tab button:hover {
+    background-color: var(--stick);
+}
+
+/* Create an active/current tablink class */
+.section__tab button.active {
+    background-color: var(--stick);
+}
+
+/* Style the tab content */
+.section__tabcontent {
+    display: none;
+    padding: 6px 12px;
+    background: rgba(255, 241, 230, 0);
+    border-top: none;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------- C O N T A C T - F O R M -------------------------------------------------- */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: var(--titleColor);
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: var(--stick);
+}
+
+/* Add a background color and some padding around the form */
+.container__form {
+    text-indent: 0;
+    text-align: left;
+    border-radius: 5px;
+    background-color: rgba(204, 191, 182, 0.5);
+    padding: 20px;
+    display: flex;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------- C O N T A C T - O T H E R  ----------------------------------------------- */
+
+.section__main-img img {
+    /* empty */
+}
+
+.container__both { /* and aboutMe */
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------- R E S P O N S I V E --------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 1000px) {
     /* main container */
@@ -327,22 +529,21 @@ body::-webkit-scrollbar-thumb {
     }
 
     .header_right {
-        display: flex;
         width: auto;
+        display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items:center;
+        align-items: center;
     }
 
     .header__text {
         width: auto;
-        margin: 0;
     }
 
     .header__container-img {
         margin: 10px auto;
     }
-
+    
     .header__container-img img {
         width: 100%;
     }
@@ -356,33 +557,55 @@ body::-webkit-scrollbar-thumb {
     .nav__item {
         margin: 10px;
     }
-
-    /* content */
-
     
-
     /* sidebar */
+    
     .sidebar__post {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-
+    
     /* footer */
-
+    
     .footer {
         flex-direction: column;
         width: auto;
     }
-
+    
     .footer__section-first-child {
         padding-top: 30px;
     }
-
+    
     .footer__section-third-child {
         padding-bottom: 30px;
         display: flex;
         justify-content: center;
         align-self: center;
     }
+
+    /* ------------------------------------------------------- A B O U T  M E ------------------------------------------------------- */
+
+    /* empty */
+
+    /* ------------------------------------------------------------------------------------------------------------------------------ */
+    
+    /* ------------------------------------------------------- C O N T A C T -------------------------------------------------------- */
+
+    .section__main-img img {
+        width: 100%;
+    }
+
+    .container__both {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ------------------------------------------------------------------------------------------------------------------------------ */
+    /* ------------------------------------------------------------------------------------------------------------------------------ */
+    /* ------------------------------------------------------------------------------------------------------------------------------ */
 }
