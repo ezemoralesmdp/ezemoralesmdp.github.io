@@ -784,6 +784,13 @@ input[type=submit]:hover {
     
     .footer__section-first-child {
         padding-top: 30px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer__section-second-child {
+        flex-direction: column;
+        width: 100%;
     }
     
     .footer__section-third-child {
