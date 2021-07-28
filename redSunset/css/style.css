@@ -808,7 +808,7 @@ input[type=submit]:hover {
         display: flex;
         justify-content: center;
         align-self: center;
-        font-size: 60px;
+        font-size: 300%;
         margin: 10px;
     }
 
