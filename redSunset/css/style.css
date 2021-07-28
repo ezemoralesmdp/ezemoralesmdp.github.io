@@ -793,7 +793,11 @@ input[type=submit]:hover {
     .footer__section-first-child {
         padding: 30px 0 0 0;
     }
-    
+
+    .footer__section-first-child img {
+        width: 80%;
+    }
+
     .footer__section-second-child {
         flex-direction: column;
         width: 100%;
