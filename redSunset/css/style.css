@@ -809,6 +809,7 @@ input[type=submit]:hover {
         justify-content: center;
         align-self: center;
         font-size: 60px;
+        margin: 10px;
     }
 
     /* ------------------------------------------------------- A B O U T  M E ------------------------------------------------------- */
