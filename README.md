@@ -1,4 +1,8 @@
-# blogTemplate
-These are all the "blog templates designs" I did at the moment. Personalized and unique creations. I only used HTML5, CSS3 and JavaScript.
+# :computer: webProjects :copyright:
+Web projects created up to now. Personalized and unique creations. I only used HTML5, CSS3 and JavaScript.
 
-'RedSunset' --> https://ezemoralesmdp.github.io/redSunset/
+:diamonds: 'Alpalah' --> https://ezemoralesmdp.github.io/alpalah/
+
+:diamonds: 'curriculumVitae' --> https://ezemoralesmdp.github.io/curriculumVitae/
+
+:diamonds: 'RedSunset' --> https://ezemoralesmdp.github.io/redSunset/
