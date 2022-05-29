@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&family=Nunito+Sans:ital,wght@1,400;1,600&family=Space+Mono:ital,wght@1,400;1,700&display=swap');
+
+:root {
+    --background: #92594e49;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    background: url(../images/backgroundQR.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#pointer{
+    background: none;
+    position: absolute;
+    bottom: 70px;
+    right: 240px;
+    width: 250px;
+    height: 250px;
+    z-index: 1;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.containerblackBlock{
+    width: 80%;
+    margin: auto;
+    height: 90vh;
+    background: var(--background);
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+    font-size: 4rem;
+}
+
+.blackBlocktitle {
+    background: none;
+}
+
+.blackBlockelements {
+    display: flex;
+    justify-content: center;
+    background: none;
+}
+
+.elementstext, .elementsqr {
+    margin: 0 20px;
+    background: none;
+}
+
+.elementsqr:hover {
+    filter: drop-shadow(1px 1px 25px #888);
+    cursor: pointer;
+}
+
+.elementsqr a {
+    background: none;
+}
+
+.containerghostBox {
+    height: 5vh;
+    width: 100%;
+}
+
+.left__bottom .fa-brands {
+    background: none;
+}
